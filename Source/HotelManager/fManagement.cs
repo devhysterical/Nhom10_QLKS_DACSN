@@ -66,10 +66,11 @@ namespace HotelManager
         }
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            // nhan nut thi lap tuc thoat form và quay lai fLogin
             this.Close();
+
+            // Khởi tạo và chạy lại form đăng nhập
             fLogin fLogin = new fLogin();
-            fLogin.ShowDialog();
+            fLogin.Show();
         }
         private void titleRecieveRoom_Click(object sender, EventArgs e)
         {
